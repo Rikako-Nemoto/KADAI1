@@ -1,0 +1,127 @@
+@media screen and (max-width:767px) {
+    .SuccessStories {
+        padding-top: 40px !important
+    }
+}
+
+.SuccessStories__title {
+    display: inline-block
+}
+
+.SuccessStories__title::after {
+    content: '';
+    border-bottom: solid 4px #f79314;
+    display: block;
+    margin-top: 10px
+}
+
+@media screen and (max-width:767px) {
+    .SuccessStories__title::after {
+        margin-top: 5px
+    }
+}
+
+.SuccessStories__title>h4 {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 1;
+    vertical-align: bottom
+}
+
+@media screen and (max-width:767px) {
+    .SuccessStories__title>h4 {
+        font-size: 16px
+    }
+}
+
+.SuccessStories__title>img {
+    height: auto;
+    margin-left: 10px;
+    width: 34px
+}
+
+@media screen and (max-width:767px) {
+    .SuccessStories__title>img {
+        margin-left: 5px;
+        width: 24px
+    }
+}
+
+@media screen and (max-width:767px) {
+    .SuccessStoriesList {
+        flex-direction: column;
+        margin-top: 25px !important
+    }
+}
+
+.SuccessStoriesList__link {
+    cursor: pointer;
+    display: contents
+}
+
+.SuccessStoriesList__link:hover .SuccessStory__intro {
+    color: #f79314
+}
+
+.SuccessStoriesList__link:hover .SuccessStory__intro p {
+    color: #f79314
+}
+
+.SuccessStory {
+    display: flex;
+    width: 33.3%;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 50px
+}
+
+@media screen and (max-width:1080px) {
+    .SuccessStory {
+        padding-left: 10px;
+        padding-right: 10px
+    }
+}
+
+@media screen and (max-width:767px) {
+    .SuccessStory {
+        align-items: center;
+        margin-bottom: 40px;
+        padding-right: 0;
+        width: 100%
+    }
+}
+
+.SuccessStory::after {
+    content: url(https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/common/chevron-right.jpg);
+    display: inline-block;
+    height: fit-content;
+    margin: auto;
+    transform: scale(0.4)
+}
+
+@media screen and (max-width:767px) {
+    .SuccessStory::after {
+        margin-right: 6px
+    }
+}
+
+.SuccessStory__image {
+    height: 60px;
+    width: 60px
+}
+
+.SuccessStory__intro {
+    color: #333;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    margin: 10px 16px;
+    text-align: left
+}
+
+.SuccessStory__intro p {
+    color: #000;
+    font-weight: 700
+}
+

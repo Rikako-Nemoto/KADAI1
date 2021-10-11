@@ -1,0 +1,870 @@
+@import url("corporate-interview-list.css");
+@import url("success-story.css");
+
+.engineer-name.contents-tidy {
+    flex-direction: column
+}
+
+.interview-list {
+    margin-left: -20px;
+    margin-right: -20px
+}
+
+@media screen and (max-width:1070px) {
+    .interview-list {
+        display: block;
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 160px;
+        padding-right: 160px
+    }
+}
+
+@media screen and (max-width:840px) {
+    .interview-list {
+        padding-left: 80px;
+        padding-right: 80px
+    }
+}
+
+@media screen and (max-width:560px) {
+    .interview-list {
+        padding-left: 40px;
+        padding-right: 40px
+    }
+}
+
+.interview-list>li {
+    padding-left: 20px;
+    padding-right: 20px;
+    width: calc(100% / 3)
+}
+
+@media screen and (max-width:1070px) {
+    .interview-list>li {
+        padding-left: 0;
+        padding-right: 0;
+        width: 100%
+    }
+}
+
+@media screen and (max-width:1070px) {
+    .interview-list>li+li {
+        margin-top: 20px;
+        padding-top: 30px;
+        border-top: solid 1px #efefef
+    }
+}
+
+.interview-media .interview-media-thumbnail {
+    overflow: hidden;
+    position: relative;
+    padding-top: 100%
+}
+
+.interview-media .interview-media-thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0
+}
+
+.interview-media .interview-thumbnail-titlebox {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 80px 20px 15px;
+    background: -webkit-linear-gradient(to top, rgba(0, 0, 0, 0.8) 55%, rgba(30, 30, 30, 0.7), rgba(50, 50, 50, 0));
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 55%, rgba(30, 30, 30, 0.7), rgba(50, 50, 50, 0))
+}
+
+@media screen and (max-width:767px) {
+    .interview-media .interview-thumbnail-titlebox {
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 55%, rgba(30, 30, 30, 0));
+        padding: 50px 10px 10px
+    }
+}
+
+@media screen and (max-width:375px) {
+    .interview-media .interview-thumbnail-titlebox {
+        padding: 35px 10px 10px
+    }
+}
+
+.interview-media .interview-thumbnail-titlebox .interview-thumbnail-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #f79314
+}
+
+@media screen and (max-width:375px) {
+    .interview-media .interview-thumbnail-titlebox .interview-thumbnail-title {
+        font-size: 14px
+    }
+}
+
+.interview-media .interview-thumbnail-titlebox .interview-thumbnail-subtitle {
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    margin-top: 5px;
+    padding-top: 4px;
+    border-top: 1px solid #fff
+}
+
+@media screen and (max-width:767px) {
+    .interview-media .interview-thumbnail-titlebox .interview-thumbnail-subtitle {
+        display: flex;
+        flex-direction: column
+    }
+}
+
+@media screen and (max-width:375px) {
+    .interview-media .interview-thumbnail-titlebox .interview-thumbnail-subtitle {
+        font-size: 14px
+    }
+}
+
+@media screen and (max-width:767px) {
+    .interview-media .interview-thumbnail-titlebox .interview-thumbnail-subtitle::after {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        bottom: 13px;
+        right: 13px;
+        border-right: solid 3px #f79214;
+        border-top: solid 3px #f79214;
+        transform: rotate(45deg)
+    }
+}
+
+.interview-media .interview-thumbnail-titlebox .interview-thumbnail-subtitle>*:last-child {
+    font-size: 12px;
+    margin-left: 15px
+}
+
+@media screen and (max-width:767px) {
+    .interview-media .interview-thumbnail-titlebox .interview-thumbnail-subtitle>*:last-child {
+        margin-left: 0
+    }
+}
+
+@media screen and (max-width:375px) {
+    .interview-media .interview-thumbnail-titlebox .interview-thumbnail-subtitle>*:last-child {
+        font-size: 11px
+    }
+}
+
+.interview-media .interview-thumbnail-titlebox .interview-thumbnail-subtitle .name {
+    font-size: 20px
+}
+
+@media screen and (max-width:375px) {
+    .interview-media .interview-thumbnail-titlebox .interview-thumbnail-subtitle .name {
+        font-size: 18px
+    }
+}
+
+.interview-media .interview-media-text {
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 15px;
+    line-height: 1.8
+}
+
+@media screen and (max-width:767px) {
+    .interview-media .interview-media-text {
+        margin-top: 20px
+    }
+}
+
+.site-header {
+    width: 100%;
+    position: absolute
+}
+
+.service-list {
+    margin-right: -20px;
+    margin-left: -20px
+}
+
+@media screen and (max-width:767px) {
+    .service-list {
+        flex-direction: column
+    }
+}
+
+.service-list>li {
+    padding-right: 20px;
+    padding-left: 20px;
+    width: calc(100% / 3)
+}
+
+@media screen and (max-width:767px) {
+    .service-list>li {
+        width: 100%
+    }
+}
+
+@media screen and (max-width:767px) {
+    .service-list>li+li {
+        margin-top: 40px
+    }
+}
+
+.service-media-thumbnail {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border: solid 2px;
+    border-radius: 10px;
+    padding: 0 20px;
+    height: 190px;
+    box-sizing: border-box
+}
+
+@media screen and (max-width:767px) {
+    .service-media-thumbnail {
+        justify-content: center
+    }
+}
+
+.service-media-thumbnail.red {
+    border-color: #fc6803
+}
+
+.service-media-thumbnail.green {
+    border-color: #08af77
+}
+
+.service-media-thumbnail.black {
+    border-color: #000
+}
+
+.service-media-thumbnail img {
+    width: 100%;
+    height: auto
+}
+
+@media screen and (max-width:767px) {
+    .service-media-thumbnail img {
+        max-width: 280px
+    }
+}
+
+.service-media-text {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.8
+}
+
+@media screen and (max-width:767px) {
+    .service-media-text {
+        font-size: 15px
+    }
+}
+
+.section-top-hero {
+    padding-top: 190px;
+    padding-bottom: 28px;
+    background-image: url(https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/top-hero.png);
+    background-size: auto 100%;
+    background-position: right 0;
+    background-repeat: no-repeat
+}
+
+@media screen and (max-width:767px) {
+    .section-top-hero {
+        padding-top: 258px;
+        padding-bottom: 12px;
+        background-image: url(https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/top-hero-sp.png)
+    }
+}
+
+.section-top-hero .proviso {
+    color: #888;
+    font-size: 10px;
+    max-width: 512px;
+    padding-top: 132px
+}
+
+@media screen and (max-width:1024px) {
+    .section-top-hero .proviso p {
+        background-color: rgba(255, 255, 255, .3);
+        color: #000;
+        padding: 4px
+    }
+}
+
+@media screen and (max-width:767px) {
+    .section-top-hero .proviso {
+        padding-top: 24px;
+        background-color: inherit;
+        color: inherit;
+        padding: none
+    }
+}
+
+.top-hero-box {
+    position: relative;
+    max-width: 337px
+}
+
+@media screen and (max-width:767px) {
+    .top-hero-box {
+        max-width: 250px;
+        margin-left: auto;
+        margin-right: auto
+    }
+}
+
+.top-hero-box>*+* {
+    margin-top: 30px
+}
+
+@media screen and (max-width:767px) {
+    .top-hero-box>*+* {
+        margin-top: 20px
+    }
+}
+
+.top-hero-box .top-hero-heading>img {
+    width: 100%;
+    height: auto
+}
+
+.top-hero-box .top-hero-text {
+    font-size: 20px;
+    font-weight: 700;
+    text-align: left;
+    white-space: nowrap;
+    line-height: 1.7
+}
+
+@media screen and (max-width:767px) {
+    .top-hero-box .top-hero-text {
+        font-size: 15px;
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.6)
+    }
+}
+
+@media screen and (max-width:414px) {
+    .top-hero-box .top-hero-text {
+        text-align: center
+    }
+}
+
+.top-hero-box .top-hero-text>span {
+    color: #f79314
+}
+
+.top-hero-box .No1-notation {
+    margin: 0;
+    position: absolute;
+    top: 0;
+    right: -170px
+}
+
+@media screen and (max-width:1024px) {
+    .top-hero-box .No1-notation {
+        top: -168px;
+        right: 0;
+        left: -28px
+    }
+}
+
+@media screen and (max-width:767px) {
+    .top-hero-box .No1-notation {
+        top: -118px;
+        left: -56px
+    }
+}
+
+@media screen and (max-width:414px) {
+    .top-hero-box .No1-notation {
+        top: -98px;
+        left: -24px
+    }
+}
+
+.top-hero-box .No1-notation img {
+    width: 154px;
+    height: 154px
+}
+
+@media screen and (max-width:767px) {
+    .top-hero-box .No1-notation img {
+        width: 120px;
+        height: 120px
+    }
+}
+
+@media screen and (max-width:414px) {
+    .top-hero-box .No1-notation img {
+        width: 88px;
+        height: 88px
+    }
+}
+
+.engineer-list {
+    margin-top: 45px;
+    margin-left: -15px;
+    margin-right: -15px
+}
+
+@media screen and (max-width:767px) {
+    .engineer-list {
+        width: 100%;
+        display: flex;
+        margin-left: 0;
+        margin-right: 0
+    }
+}
+
+.engineer-list .engineer-box {
+    background-color: #fff;
+    border-radius: 15px;
+    margin: 0 15px;
+    width: calc(100% / 3)
+}
+
+@media screen and (max-width:767px) {
+    .engineer-list .engineer-box {
+        margin-left: 0;
+        margin-right: 0
+    }
+}
+
+.engineer-media {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+    padding: 20px
+}
+
+@media screen and (max-width:767px) {
+    .engineer-media {
+        padding: 10px 20px 20px
+    }
+}
+
+.engineer-conpany-logo {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.engineer-conpany-logo>img {
+    width: 100%
+}
+
+.engineer-profile {
+    display: flex;
+    align-items: center;
+    width: 100%
+}
+
+.engineer-name {
+    text-align: start;
+    margin-left: 15px;
+    font-size: 20px
+}
+
+.engineer-name>span {
+    color: #f79314;
+    font-size: 14px
+}
+
+.engineer-text {
+    width: 100%;
+    position: relative;
+    background-color: #f6f6f6;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    text-align: start
+}
+
+@media screen and (max-width:767px) {
+    .engineer-text {
+        font-size: 15px
+    }
+}
+
+@media screen and (max-width:767px) {
+    .engineer-text>p {
+        line-height: 2
+    }
+}
+
+.engineer-text::before {
+    content: '';
+    position: absolute;
+    top: -25px;
+    left: 29px;
+    margin-left: -15px;
+    border: 15px solid transparent;
+    border-bottom: 15px solid #f6f6f6
+}
+
+.course-list>li+li {
+    margin-top: 40px
+}
+
+@media screen and (max-width:767px) {
+    .course-list>li+li {
+        margin-top: 60px
+    }
+}
+
+.course-media {
+    font-weight: bold;
+    padding: 45px;
+    background-color: #fff
+}
+
+@media screen and (max-width:767px) {
+    .course-media {
+        flex-direction: column;
+        padding: 25px
+    }
+}
+
+.course-media.career .course-title {
+    border-image: linear-gradient(to right, #f79214 0%, #f74e06 100%);
+    border-image-slice: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0
+}
+
+.course-media.career .course-text {
+    color: #f77f14;
+    font-size: 24px
+}
+
+.course-media.career .title-label {
+    background-color: #f75307
+}
+
+.course-title {
+    width: 30%;
+    margin-right: 30px;
+    border: solid 3px
+}
+
+@media screen and (max-width:767px) {
+    .course-title {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0
+    }
+}
+
+.course-title.contents-tidy {
+    justify-content: center;
+    align-items: center
+}
+
+.course-title h3 {
+    font-size: 24px;
+    text-align: center
+}
+
+.course-title h3 span {
+    font-size: 14px;
+    border-radius: 20px;
+    color: #fff;
+    margin-top: 5px
+}
+
+@media screen and (max-width:767px) {
+    .course-title h3 span {
+        font-size: 12px
+    }
+}
+
+.course-title p {
+    color: #f77f14;
+    margin-bottom: 7.5px;
+    font-size: 18px;
+    font-weight: bold
+}
+
+.course-contents {
+    width: calc(70% + 30px);
+    position: relative
+}
+
+@media screen and (max-width:767px) {
+    .course-contents {
+        width: 100%;
+        margin-top: 25px;
+        padding-right: 0
+    }
+}
+
+.course-contents>div {
+    margin-top: 20px;
+    display: flex;
+    align-items: center
+}
+
+@media screen and (max-width:767px) {
+    .course-contents>div {
+        margin-top: 25px
+    }
+}
+
+.course-contents>div p:first-of-type {
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 400;
+    color: #fff;
+    background: linear-gradient(90deg, #212121, #444);
+    padding: 6px 16px;
+    border-radius: 20px;
+    margin-right: 15px
+}
+
+@media screen and (max-width:767px) {
+    .course-contents>div p:first-of-type {
+        word-break: keep-all
+    }
+}
+
+.course-contents>div p:last-of-type {
+    font-size: 18px
+}
+
+.course-text {
+    font-size: 16px;
+    line-height: 1
+}
+
+@media screen and (max-width:767px) {
+    .course-text {
+        line-height: 1.5
+    }
+}
+
+.course-text>div {
+    margin-top: 20px;
+    display: flex;
+    align-items: center
+}
+
+.conditions-list {
+    margin-top: 7px;
+    padding-bottom: 20px
+}
+
+@media screen and (max-width:767px) {
+    .conditions-list {
+        width: 100%;
+        margin-top: 15px;
+        padding-bottom: 0
+    }
+}
+
+.course-link {
+    position: absolute;
+    right: 20px;
+    bottom: -5px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #999
+}
+
+@media screen and (max-width:767px) {
+    .course-link {
+        position: static;
+        text-align: right;
+        margin-top: 25px;
+        padding-right: 20px
+    }
+}
+
+.course-link::after {
+    content: url(https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/common/chevron-right.jpg);
+    display: inline-block;
+    height: fit-content;
+    margin: auto;
+    transform: scale(0.4);
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    bottom: 10px;
+    right: -14px
+}
+
+@media screen and (max-width:767px) {
+    .course-link::after {
+        right: 0
+    }
+}
+
+.message-title {
+    display: inline-block;
+    font-size: 50px;
+    color: #ff802c;
+    background: -webkit-linear-gradient(0deg, #ff802c, #f79214);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 1;
+    letter-spacing: 3px;
+    position: relative;
+    z-index: 1;
+    margin-left: 20px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900
+}
+
+@media screen and (max-width:1024px) {
+    .message-title {
+        font-size: 32px;
+        background: -webkit-linear-gradient(0deg, #ff802c, #f79214);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent
+    }
+}
+
+.message-contents {
+    margin-top: -20px;
+    position: relative
+}
+
+@media screen and (max-width:1024px) {
+    .message-contents {
+        flex-direction: column;
+        position: relative;
+        background-color: #fff;
+        padding: 45px 40px 40px
+    }
+}
+
+.message-contents.contents-tidy {
+    align-items: center
+}
+
+.message-text {
+    background-color: #fff;
+    padding: 40px 150px 40px 40px;
+    margin-right: -100px
+}
+
+@media screen and (max-width:1024px) {
+    .message-text {
+        padding: 0;
+        margin-right: 0;
+        margin-top: 30px;
+        order: 2
+    }
+}
+
+.message-text p {
+    line-height: 2;
+    font-weight: 500
+}
+
+.message-text p+p {
+    margin-top: 40px
+}
+
+.message-thumbnail {
+    position: relative
+}
+
+@media screen and (max-width:1024px) {
+    .message-thumbnail {
+        order: 1
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .message-thumbnail>img {
+        width: 100%
+    }
+}
+
+.message-thumbnail p {
+    position: absolute;
+    padding: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 1px 1px 10px #808080
+}
+
+@media screen and (max-width:413px) {
+    .message-thumbnail p {
+        font-size: 14px;
+        padding: 15px
+    }
+}
+
+@media screen and (max-width:374px) {
+    .message-thumbnail p {
+        padding: 5px
+    }
+}
+
+.message-thumbnail p span {
+    font-size: 24px
+}
+
+@media screen and (max-width:413px) {
+    .message-thumbnail p span {
+        font-size: 20px
+    }
+}
+
+.CorporationInterview__pickup {
+    position: absolute;
+    width: 121px
+}
+
+@media screen and (max-width:767px) {
+    .CorporationInterview__pickup {
+        width: 15%
+    }
+}
+
+@media screen and (max-width:480px) {
+    .CorporationInterview__pickup {
+        width: 121px
+    }
+}
+
+.CorporationInterview__thumbnail {
+    width: 100%
+}
+
+.CorporationInterview__thumbnail--pc {
+    display: block
+}
+
+@media screen and (max-width:480px) {
+    .CorporationInterview__thumbnail--pc {
+        display: none
+    }
+}
+
+.CorporationInterview__thumbnail--sp {
+    display: none
+}
+
+@media screen and (max-width:480px) {
+    .CorporationInterview__thumbnail--sp {
+        display: block
+    }
+}
+

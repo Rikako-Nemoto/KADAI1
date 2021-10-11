@@ -1,0 +1,129 @@
+.CorporateInterviewSection {
+    margin-top: 30px
+}
+
+@media screen and (max-width:767px) {
+    .CorporateInterviewList {
+        margin-bottom: 4px !important
+    }
+}
+
+.CorporateInterviewCard {
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    margin-bottom: 25px;
+    padding: 30px;
+    position: relative;
+    text-align: left;
+    width: 100%
+}
+
+@media screen and (max-width:767px) {
+    .CorporateInterviewCard {
+        display: block;
+        margin: 0 auto 25px;
+        padding: 20px
+    }
+}
+
+.CorporateInterviewCard:last-of-type {
+    margin-bottom: 0
+}
+
+.CorporateInterviewCard--with-link {
+    padding: 30px 30px 60px
+}
+
+@media screen and (max-width:767px) {
+    .CorporateInterviewCard--with-link {
+        padding: 20px 20px 30px
+    }
+}
+
+.CorporateInterviewCard__left {
+    color: #a2a2a4;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px
+}
+
+@media screen and (max-width:767px) {
+    .CorporateInterviewCard__left {
+        margin-bottom: 16px
+    }
+}
+
+.CorporateInterviewCard__left img {
+    border-radius: 4px;
+    width: 390px;
+    margin-bottom: 5px
+}
+
+@media screen and (max-width:767px) {
+    .CorporateInterviewCard__left img {
+        width: 100%
+    }
+}
+
+@media screen and (max-width:767px) {
+    .CorporateInterviewCard__left span {
+        display: block
+    }
+}
+
+.CorporateInterviewCard__right {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    margin-bottom: 40px;
+    margin-left: 16px
+}
+
+@media screen and (max-width:767px) {
+    .CorporateInterviewCard__right {
+        margin: 0
+    }
+}
+
+.CorporateInterviewCard__right>p {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 16px
+}
+
+.CorporateInterviewCard__link {
+    align-items: baseline;
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    bottom: 50px;
+    right: 50px
+}
+
+@media screen and (max-width:767px) {
+    .CorporateInterviewCard__link {
+        align-items: center;
+        margin-top: 25px;
+        position: static;
+        text-align: right
+    }
+}
+
+.CorporateInterviewCard__link a {
+    color: #a2a2a4;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 21px
+}
+
+.CorporateInterviewCard__link a:hover {
+    color: #f79314
+}
+
+.CorporateInterviewCard__link img {
+    margin-left: 10px;
+    width: 6px
+}
+
